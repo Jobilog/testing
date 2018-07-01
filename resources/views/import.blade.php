@@ -8,7 +8,7 @@
     width: 70%;
 }
 
-#customers td, #customers th {
+#customers td {
     border: 1px solid #ddd;
     padding: 9px;
     font-size: 15px;
@@ -25,72 +25,89 @@
     text-align: left;
     background-color: rgb(49, 69, 85);
     color: white;
+    font-size: 15px;
+    font-weight: 900;
 }
 </style>
 <center><h3>Import Rates</h3></center>
 <table id="customers" align="center"> <br>
   <tr>
-    <th></th>
-    <th>Full Container Load</th>
-    <th>Less than a Container load</th>
-  </tr>
-  <tr>
-     <td>Container Size</td>
-    <td>20'</td>
-    <td>40'</td>
-  </tr>
-  <tr>
-     <td>Brokerage</td>
-  <td>Php <?php echo number_format("1300",2)?></td>
-    <td>Php <?php echo number_format("1300",2)?></td>
-  </tr>
-  <tr>
-    <td>Processing Fee</td>
-     <td>Php <?php echo number_format("1500",2)?></td>
-    <td>Php <?php echo number_format("1500",2)?></td>
+    <th>Brokerage Fee</th>
+    <th>AS PER CAO 01-2001</th>
   </tr>
   <tr>
      <td>Documentation</td>
-     <td>Php <?php echo number_format("500",2)?></td>
     <td>Php <?php echo number_format("500",2)?></td>
+  </tr>
+  <tr>
+     <td>Customs Entry Form</td>
+  <td>Php <?php echo number_format("500",2)?></td>
+   
+  </tr>
+  <tr>
+    <td>Processing Fee</td>
+     <td>Php <?php echo number_format("2500",2)?></td>
+  </tr>
+  <tr>
+     <td>*Succeeding container</td>
+     <td>Php <?php echo number_format("1000",2)?>/container</td>
   </tr>
   <tr>
     <td>Handling Fee</td>
     <td>Php <?php echo number_format("500",2)?></td>
-    <td>Php <?php echo number_format("500",2)?></td>
   </tr>
   <tr>
-     <td>Import Entry</td>
- <td>Php <?php echo number_format("315",2)?></td>
-    <td>Php <?php echo number_format("315",2)?></td>
+     <td>In Case:</td>
+ <td></td>
+
   </tr>
   <tr>
-    <td>Customs Entry</td>
-  <td>Php <?php echo number_format("2500",2)?></td>
-    <td>Php <?php echo number_format("2500",2)?></td>
+    <td>No Import License</td>
+  <td>Php <?php echo number_format("10000",2)?>/LCL</td>
   </tr>
   <tr>
-   <td>Atrig</td>
-   <td>Php <?php echo number_format("300",2)?></td>
-    <td>Php <?php echo number_format("300",2)?></td>
+   <td></td>
+   <td>Php <?php echo number_format("7000",2)?>/AIR</td>
+
   </tr>
   <tr>
-    <td>Collectors</td>
-     <td>Php <?php echo number_format("1500",2)?></td>
-    <td>Php <?php echo number_format("1500",2)?></td>
+    <td></td>
+     <td>Php <?php echo number_format("15000",2)?>/Contnr</td>
+
   </tr>
   <tr>
-     <td>Receipted</td>
-    <td>Php <?php echo number_format("12",2)?></td>
-    <td>Php <?php echo number_format("12",2)?></td>
+     <td>Trucking charges (Metro Manila)</td>
+    <td></td>
   </tr>
   <tr>
-    <td>Freight Charge</td>
-   <td>Php <?php echo number_format("18000",2)?></td>
-    <td>Php <?php echo number_format("20000",2)?></td>
+    <td>LCL/FCL Shipment</td>
+   <td></td>
 
    </tr>
- 
+   <tr>
+    <td>a.)0001kgs-100kgs</td>
+   <td>Php <?php echo number_format("1500",2)?>/trip</td>
+   </tr>
+   <tr>
+    <td>b.)1,001kgs-1,500kgs</td>
+   <td>Php <?php echo number_format("1800",2)?>/trip</td>
+   </tr>
+   <tr>
+    <td>b.)1,501kgs-2000kgs</td>
+   <td>Php <?php echo number_format("2200",2)?>/trip</td>
+   </tr>
+     <tr>
+    <td>1x20'</td>
+   <td>Php <?php echo number_format("18000",2)?>/trip</td>
+   </tr>
+   <tr>
+    <td>1x40'</td>
+   <td>Php <?php echo number_format("18000",2)?>/trip</td>
+   </tr>
+   <tr>
+    <td>PLUS</td>
+   <td>Other receipted expenses</td>
+   </tr>
 </table>  <br>
 
 @endsection

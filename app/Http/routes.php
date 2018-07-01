@@ -23,3 +23,7 @@ Route::get('/domestic', 'HomeController@showDomestic');
 Route::get('/import', 'HomeController@showImport');
 Route::get('/export', 'HomeController@showExport');
 Route::get('/quote', 'HomeController@showQuote');
+
+Route::post('/store', 'HomeController@showRecord');
+
+Route::get('/view', 'HomeController@showAll');
